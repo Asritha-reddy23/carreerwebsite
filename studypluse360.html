@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="studypluse360.css">
+</head>
+
+<body>
+ <div class="background">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="file:///C:/Users/user/Downloads/DALL%C2%B7E%202025-01-31%2015.31.09%20-%20A%20modern%20and%20clean%20logo%20for%20'StudyPlus360',%20an%20education-focused%20brand.%20The%20design%20features%20an%20open%20book,%20a%20graduation%20cap,%20and%20a%20circular%20element%20sym.webp" class= height="55px" width="70px" class="navbar-image" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active " href="#">
+                    Studyplus360<span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link " href="#home">Home</a>
+                <a class="nav-link " href="#aboutus">About Us</a>
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#whychooseus">Why choose us?</a>
+                <a class="nav-link " href="#appointment">Appointment</a>
+            
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <h1 class="heading">Empowering Education, Enriching Futures! </h1>
+        <p class="para">At StudyPlus360, we believe in transforming education through innovation, technology, and personalized learning. Whether you’re a student, educator, or institution, our platform is designed to enhance learning experiences and drive academic success. </p>
+    </section>
+    <section id="aboutus">
+        <h1 class="heading"> About Studypluse360</h1>
+        <p class="para">StudyPlus Education Institute, established in 2011, is a prominent educational center located in South-Central Mumbai, India. The institute offers a variety of programs, including personality development workshops, to help students enhance their skills and knowledge. With over 12 years of experience, StudyPlus has trained more than 10,000 students, achieving notable success rates:
+
+            90%+: 251 students
+            80%+: 1,039 students
+        
+        The institute emphasizes a partnership approach with students and parents, focusing on building careers through guided, consistent, and disciplined efforts. Their motto, "Explore The Potential," reflects their commitment to helping students realize and develop their full capabilities.
+        <span>studyplus360.org</span> 
+        
+        For more information or to contact StudyPlus Education Institute, you can visit their official website:
+        studyplus.org
+        </p>
+    </section>
+    <section id="services">
+        <div class="servicebg">
+        <h1 class="heading"> Services</h1>
+        <div class="card-container d-flex flex-row">
+            <div class="card ">
+                <h1 class="top">Study Abroad Programs</h1>
+                <p>Assistance with securing admissions to top universities in the USA, including guidance on application processes and visa requirements.</p>
+            </div>
+            <div class="card ">
+                <h1 class="top">IELTS Preparation</h1>
+                <p>Preparation courses to help students achieve high scores in the IELTS exam, a common requirement for studying abroad.</p>
+            </div>
+            <div class="card ">
+                <h1 class="top">Business Communication Course</h1>
+                <p>Courses focusing on spoken English, professional communication skills, and LinkedIn profile optimization.</p>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <section id="whychooseus">
+        <h1 class="heading">Why Choose Us?</h1>
+        <p  class="whychooseuspara d-flex flex-column">
+        ✅ Comprehensive Learning Solutions – From interactive courses to expert mentorship, we provide everything you need to excel.<br>
+        ✅ Technology-Driven Approach – Smart tools, AI-powered analytics, and digital resources to enhance learning efficiency.<br>
+        ✅ Global Reach, Local Impact – Connect with educators and students worldwide while receiving tailored support.<br>
+        ✅ Seamless Access Anytime, Anywhere – Learn at your own pace with our user-friendly digital platform.<br>
+        </p>
+    </section>
+    <section id="appointment">
+        <div class="container d-flex flex-column">
+            <h2 class="heading">Book Your Appointment</h2>
+            <form action="/submit_appointment" method="POST" class="appointment-form d-flex flex-column">
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+    
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter any special requests or message" required></textarea>
+    
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <div class="bottomtext">
+        @2025studyplus360|edu.com
+    </div>
+
+
+    </div>
+ </div>
+</body>
+
+</html>
+    
